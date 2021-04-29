@@ -1,0 +1,115 @@
+#acardhead{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: bolder;
+    color: black;
+}
+hr {
+    width: 90%;
+    margin-left: 2%;
+}
+.slideso {
+    width: 100%;
+    position: relative;
+}
+.onetac #taccover{
+    height: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+.onetac #taccover2{
+    height: 17em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+.onetac #taccover3{
+    height: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+.taccontent {
+    margin-left:2%;
+    width: 90%;
+    margin:0 auto;
+    display: none;
+}
+.taccontent h4 {
+    margin-top: 1%;
+    text-align: center;
+}
+#quote {
+    color: cadetblue;
+    font-size: medium;
+    text-align: center;
+    font-weight: bolder;
+}
+#end {
+    text-align: center;
+}
+.fof {
+    -webkit-animation-name: fof;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fof;
+    animation-duration: 1.5s;
+  }
+@-webkit-keyframes fof {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fof {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.scrollb {
+    display: flex;
+    justify-content: space-around;
+}
+  .prev, .next {
+    cursor: pointer;
+    margin-left: 5%;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 5%;
+    opacity: 0.5;
+    margin-bottom: 2%;
+    color: blanchedalmond;
+    background-color: black;
+    transition: 0.5s ease;
+    text-align: center;
+}
+.prev:hover ,.next:hover {
+    opacity: 1;
+    color:#8fd6e1;
+}
+.page-foot {
+    width: 100%;
+    background-color: #8fd6e1;
+    height: 5em;
+}
+#sociolinks {
+    display: flex;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    }
+#foot-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 5%;
+    display: inline-block;
+    opacity: 0.5;
+}
+#foot-icon:hover{
+    opacity: 1;
+}
+#foot-details {
+        text-align: center;
+    }
