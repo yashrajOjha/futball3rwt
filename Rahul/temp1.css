@@ -1,0 +1,139 @@
+p.heading::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+  
+p.heading:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+  
+p.heading::before {
+  content: " ";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+  
+p.heading {
+  position: relative;
+  font-weight: bold;
+  font-size:2.5vw;
+  margin-block-start: 0%;
+  margin-block-end: 0%;
+}
+  
+span.hcontainer{
+  font-family: system-ui, sans-serif;
+  font-size: 150%;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:1800px;
+  left:5%;
+  right: 5%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
+  padding: 2%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  left: 0;
+  padding: 2px;
+  color:#8fd6e1;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.display_buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 90px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slide_images{
+  text-align: center;
+}
+
+.mySlides>p{
+  text-align: left;
+}
+
+.dark-mode
+{
+    background-color: black;
+    color: white;
+}
+button{
+    padding: 0px;
+    border-width: 0px;
+}
+
+
+
+#quote {
+  color: cadetblue;
+  font-size: medium;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+
+
+
+.page-foot {
+  width: 100%;
+  background-color: #8fd6e1;
+  height: 5em;
+}
+#sociolinks {
+  display: flex;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  }
+#foot-icon {
+  width: 35px;
+  height: 35px;
+  margin-left: 5%;
+  display: inline-block;
+  opacity: 1;
+}
+#foot-icon:hover{
+  opacity: 0.5;
+}
+#foot-details {
+    text-align: center;
+}
